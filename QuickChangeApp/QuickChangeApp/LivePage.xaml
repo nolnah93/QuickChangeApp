@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickChangeApp.LivePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+            <!-- Place new controls here -->
+
+            <Label Text="Enter the amount you owe"></Label>
+            <Entry x:Name="OweEntry" WidthRequest="50"></Entry>
+            <Label Text="Enter how much you are going to pay"></Label>
+            <Entry x:Name="PayEntry" WidthRequest="50"></Entry>
+            <Button x:Name="CalculateButton" Clicked="CalculateButton_Clicked" Text="Calculate"></Button>
+            <Label x:Name="ResultLabel"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
