@@ -7,10 +7,10 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="2*"></RowDefinition>
-                <RowDefinition Height="2*"></RowDefinition>
-                <RowDefinition Height="2*"></RowDefinition>
-                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height=".5*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height=".5*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="2*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
@@ -23,12 +23,12 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <Label Text="Enter the amount you owe" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4"></Label>
+            <Label Text="Enter the amount you owe" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" FontSize="Medium"></Label>
             <Entry x:Name="OweEntry" WidthRequest="50" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4"></Entry>
-            <Label Text="Enter how much you are going to pay" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4"></Label>
+            <Label Text="Enter how much you are going to pay" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" FontSize="Medium"></Label>
             <Entry x:Name="PayEntry" WidthRequest="50" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="4"></Entry>
             <Button x:Name="CalculateButton" Clicked="CalculateButton_Clicked" Text="Calculate" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4"></Button>
-            <Label x:Name="ResultLabel" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="4"></Label>
+            <Label x:Name="ResultLabel" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="2" FontSize="Large"></Label>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
