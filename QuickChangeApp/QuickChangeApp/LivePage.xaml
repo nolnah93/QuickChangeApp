@@ -3,15 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QuickChangeApp.LivePage">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
-            <!-- Place new controls here -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
 
-            <Label Text="Enter the amount you owe"></Label>
-            <Entry x:Name="OweEntry" WidthRequest="50"></Entry>
-            <Label Text="Enter how much you are going to pay"></Label>
-            <Entry x:Name="PayEntry" WidthRequest="50"></Entry>
-            <Button x:Name="CalculateButton" Clicked="CalculateButton_Clicked" Text="Calculate"></Button>
-            <Label x:Name="ResultLabel"></Label>
-        </StackLayout>
+            <Label Text="Enter the amount you owe" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4"></Label>
+            <Entry x:Name="OweEntry" WidthRequest="50" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4"></Entry>
+            <Label Text="Enter how much you are going to pay" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4"></Label>
+            <Entry x:Name="PayEntry" WidthRequest="50" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="4"></Entry>
+            <Button x:Name="CalculateButton" Clicked="CalculateButton_Clicked" Text="Calculate" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4"></Button>
+            <Label x:Name="ResultLabel" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="4"></Label>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

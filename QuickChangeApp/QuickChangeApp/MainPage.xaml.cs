@@ -22,7 +22,7 @@ namespace QuickChangeApp
 
         private void PracticeButton_Clicked(object sender, EventArgs e)
         {
-
+            this.Navigation.PushAsync(new PracticePage());
         }
     }
 }
